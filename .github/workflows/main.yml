@@ -16,8 +16,8 @@ jobs:
           service_principal: ${{ secrets.service_principal }}
           service_principal_password: ${{ secrets.service_principal_password }}
           tenant: ${{ secrets.tenant }}
-          registry: ${{ secrets.registry }}
-          repository: ${{ secrets.repository }}
+          registry: 'caquiggtest'
+          repository: 'azuredocs'
           image:  azure-vote-front
           folder: azure-vote
           branch: master
