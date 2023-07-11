@@ -65,6 +65,8 @@ jobs:
           renderEngine: "helm"
           helmChart: 'azure-vote-front/'
           overrideFiles: 'azure-vote-front/values.yaml'
+          overrides: |
+            replicas:1
           helm-version: "latest"
         id: bake
       - name: Deploy to AKS
